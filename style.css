@@ -1,0 +1,94 @@
+/* Paleta de colores e identidad */
+:root {
+  --black-base: #272727;
+  --white-cream: #fff7d0;
+  --grey-medium: #6f6c61;
+  --yellow-pop: #ffde59;
+  --red-pop: #ff5757;
+  --blue-pop: #83c5cd;
+  --green-pop: #bee878;
+  --dark-dark-pop: #83c5cd;
+  --purple-pop: #833f96;
+  --orange-pop: #ff914d;
+}
+
+body {
+  background-color: var(--black-base);
+  color: var(--white-cream);
+  font-family: 'Courier New', Courier, monospace; /* Toque retro/computadora */
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Estructura estilo "Cartoon-Cyber Elegante" */
+header {
+  background-color: #4b4944; /* Gris cálido */
+  border-bottom: 5px solid var(--red-pop); /* Borde grueso estilo cartoon */
+  padding: 40px 20px;
+  text-align: center;
+}
+
+h1 {
+  color: var(--red-pop);
+  font-size: 3rem;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 3px 3px 0px var(--black-base); /* Sombra plana pop-art */
+}
+
+.subtitulo {
+  color: var(--white-cream);
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* Tarjetas de Proyectos o Secciones (Estética de rombos/bloques limpios) */
+section {
+  background-color: #2f2f2f;
+  border: 3px solid var(--grey-medium);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 40px;
+  box-shadow: 8px 8px 0px rgba(255, 247, 208, 0.05); /* Sombra rígida elegante */
+}
+
+h2 {
+  color: var(--red-pop);
+  border-bottom: 2px dashed var(--grey-medium); /* Línea discontinua estilo circo moderno */
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+/* Botones de acción Pop */
+.boton-contacto {
+  display: inline-block;
+  background-color: var(--red-pop);
+  color: var(--black-base);
+  padding: 12px 30px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  border: 3px solid var(--white-cream);
+  box-shadow: 4px 4px 0px var(--grey-medium);
+  transition: all 0.2s ease;
+}
+
+.boton-contacto:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px var(--grey-medium);
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  color: var(--grey-medium);
+  font-size: 0.9rem;
+}
