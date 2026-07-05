@@ -13,7 +13,7 @@
   --red-pop: #ff5757;
   --blue-pop: #83c5cd;
   --green-pop: #bee878;
-  --dark-dark-pop: #83c5cd;
+  --blue-dark-pop: #83c5cd;
   --purple-pop: #833f96;
   --orange-pop: #ff914d;
 }
@@ -154,7 +154,7 @@ h2 {
 }
 
 .contact-btn:hover {
-  border-color: var(--yellow-pop);
+  border-color: var(--purple-pop);
   transform: translateY(-2px);
   background-color: var(--grey-2);
 }
