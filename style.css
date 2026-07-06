@@ -28,18 +28,46 @@ body {
 }
 
 /* Encabezado / Show Principal */
-header {
-  /* Crea un patrón de franjas verticales alternando entre tus dos grises */
+/* Banner principal con estilo de carpa de circo en franjas bicolor limpias */
+.circus-banner {
+  background-color: var(--grey-2);
   background-image: repeating-linear-gradient(
     90deg,
     var(--grey-2),
-    var(--grey-2) 40px,
-    var(--grey-3) 40px,
-    var(--grey-3) 80px
+    var(--grey-2) 35px,
+    var(--grey-3) 35px,
+    var(--grey-3) 70px
   );
-  border-bottom: 5px solid var(--yellow-pop); /* Borde estilo cartoon */
-  padding: 50px 20px;
   text-align: center;
+  padding: 50px 20px;
+  border-bottom: 5px solid var(--yellow-pop);
+}
+
+/* Ajuste para que los textos dentro del banner resalten correctamente */
+.circus-banner h1 {
+  color: var(--yellow-pop);
+  text-shadow: 3px 3px 0px var(--bg-dark);
+}
+
+.circus-banner .intro-text {
+  color: var(--font-light);
+  max-width: 750px;
+  margin: 20px auto 0 auto;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra suave para legibilidad sobre las rayas */
+}
+
+/* Estilo exclusivo para los botones del menú de Home */
+.menu-home-btn {
+  background-color: var(--grey-2) !important;
+  box-shadow: 4px 4px 0px rgba(0,0,0,0.3);
+}
+
+.menu-home-btn:hover {
+  background-color: var(--bg-dark) !important;
+  transform: translate(2px, 2px);
+  box-shadow: 2px 2px 0px rgba(0,0,0,0.3);
 }
 
 h1 {
