@@ -29,7 +29,14 @@ body {
 
 /* Encabezado / Show Principal */
 header {
-  background-color: var(--grey-2);
+  /* Crea un patrón de franjas verticales alternando entre tus dos grises */
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--grey-2),
+    var(--grey-2) 40px,
+    var(--grey-3) 40px,
+    var(--grey-3) 80px
+  );
   border-bottom: 5px solid var(--yellow-pop); /* Borde estilo cartoon */
   padding: 50px 20px;
   text-align: center;
@@ -71,6 +78,22 @@ h2 {
   border-bottom: 2px dashed var(--grey-4); /* Guiño circense sutil */
   padding-bottom: 8px;
   margin-top: 0;
+}
+/*    Modificadores de Color por Sección  */
+
+/* Sección de color Rojo (About Me) */
+.section-red h2 {
+  color: var(--red-pop);
+}
+
+/* Sección de color Naranja (Projects) */
+.section-orange h2 {
+  color: var(--orange-pop);
+}
+
+/* Sección de color Verde (Dev Journal) */
+.section-green h2 {
+  color: var(--green-pop);
 }
 
 /* Layout de la Sección About Me con Foto */
@@ -155,8 +178,9 @@ h2 {
 
 .contact-btn:hover {
   border-color: var(--purple-pop);
+  background-color: var(--purple-pop); /* Se pinta de morado al hacer hover */
+  color: var(--font-light);
   transform: translateY(-2px);
-  background-color: var(--grey-2);
 }
 
 .contact-icon {
