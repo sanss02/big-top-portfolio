@@ -1,136 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandra P. Sieres</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandra Paola Sieres Escobar | Game Designer & Developer</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- HOME SECTION -->
-    <header>
-        <h1>Sandra P. Sieres</h1>
-        <p style="color: #ffde59; font-size: 1.4rem; font-weight: bold; margin: 10px 0 0 0; text-transform: uppercase; letter-spacing: 2px;">
-        Game Developer | Game Designer
-        </p>
-        <p class="intro-text">
-        🎪 Welcome to my circus! </p>
-        <p class="intro-text">
-            I'm so excited to tell you that each new game is an amazing new act to add to this wonderful show! 
-            Hey there! Hi, I'm <strong>Sandra P. Sieres</strong>, and I've had the pleasure of acting as master of ceremonies 
-            on this path of Game Designer and Game Developer, with a focus on Unity and C#. I always made sure to 
-            update my skills and look for inspiration. I absolutely love creating funny, memorable and enjoyable 
-            experiences for my players.
-        </p>
-</header>
+  <!-- Banner de Encabezado con Franjas -->
+  <header class="hero-banner">
+    <h1>Sandra Paola Sieres Escobar</h1>
+    <h2>Game Designer | Game Developer</h2>
+  </header>
 
-    <main>
-        
-        <!-- ABOUT ME SECTION -->
-        <section id="about">
-            <h2>🎭 About Me</h2>
-            <div class="about-container">
-                <div class="about-text">
-                    <p>I had such a fun childhood playing video games, especially Nintendo ones. They were my world and they really helped me to become who I am today.</p>
-                    <p>I absolutely love the indie projects, where the creators have the freedom to experiment, break the rules and innovate in new ways. I truly believe in the power of every person to have a special player within them.</p>
-                    <p>As a creator, designer and developer, my heart's greatest joy is to craft games that are all about my players and their happiness.</p>
-                </div>
-                
-                <!-- ESPACIO PARA TU IMAGEN DE PERFIL -->
-                <div class="about-profile-box">
-                    <!-- Reemplaza "perfil.png" por el nombre exacto de mi archivo de imagen cuendo lo tenga listo -->
-                    <img src="perfil.png" alt="Sandra P. Sieres">
-                </div>
-            </div>
-        </section>
+  <!-- Contenido de Bienvenida -->
+  <main class="home-container">
+    <div class="welcome-tag">
+      🎪 Welcome to my circus!
+    </div>
+    
+    <p class="welcome-text">
+      I'm so excited to tell you that each new game is an amazing new act to add to this wonderful show! Hey there! Hi, I'm Sandra P. Sieres, and I've had the pleasure of acting as master of ceremonies on this path of Game Designer and Game Developer, with a focus on Unity and C#. I always made sure to update my skills and look for inspiration. I absolutely love creating funny, memorable and enjoyable experiences for my players.
+    </p>
 
-        <!-- TECHNICAL SKILLS SECTION -->
-        <section id="skills">
-            <h2>🛠️ Technical Skills</h2>
-            <div class="skills-grid">
-                
-                <div class="skill-item">
-                    <img src="icons/unity.png" alt="Unity" class="skill-icon"> <!-- Espacio para Logotipo -->
-                    <span>Unity</span>
-                </div>
+    <!-- Menú de Navegación Visual (Los 3 Botones Grandes) -->
+    <nav class="main-nav">
+      <a href="about.html" class="nav-card">
+        <span class="icon yellow-star">⭐</span>
+        <h3>About Me</h3>
+      </a>
 
-                <div class="skill-item">
-                    <img src="icons/csharp.png" alt="C#" class="skill-icon"> <!-- Espacio para Logotipo -->
-                    <span>C#</span>
-                </div>
+      <a href="projects.html" class="nav-card">
+        <span class="icon joystick">🕹️</span>
+        <h3>Projects</h3>
+      </a>
 
-                <div class="skill-item">
-                    <img src="icons/vscode.png" alt="VS Code" class="skill-icon"> <!-- Espacio para Logotipo -->
-                    <span>Visual Studio Code</span>
-                </div>
+      <a href="journal.html" class="nav-card">
+        <span class="icon puzzle">🧩</span>
+        <h3>Dev Journal</h3>
+      </a>
+    </nav>
+  </main>
 
-                <div class="skill-item">
-                    <img src="icons/git.png" alt="Git" class="skill-icon"> <!-- Espacio para Logotipo -->
-                    <span>Git</span>
-                </div>
-
-                <div class="skill-item">
-                    <img src="icons/github.png" alt="GitHub" class="skill-icon"> <!-- Espacio para Logotipo -->
-                    <span>GitHub</span>
-                </div>
-
-                <div class="skill-item">
-                    <img src="icons/aseprite.png" alt="Aseprite" class="skill-icon"> <!-- Espacio para Logotipo -->
-                    <span>Aseprite</span>
-                </div>
-
-                <div class="skill-item"> <!-- Posiblemente vaya a cambiar a aKrita o eliminarla totalmente, volver a revisar mañana | Pensar en considerar Blender? -->
-                    <img src="icons/inkscape.png" alt="Inkscape" class="skill-icon"> <!-- Espacio para Logotipo -->
-                    <span>Inkscape</span>
-                </div>
-
-            </div>
-        </section>
-
-        <!-- PORTAFOLIO / PROYECTOS SECTION -->
-        <section id="portfolio">
-            <h2>🕹️ Portfolio & Projects</h2>
-            <div class="coming-soon">
-                <img src="icons/popcorn.png" alt="Coming soon" class="coming-soon-icon"> <!-- Espacio para Imagen -->
-                <p>Coming soon...</p>
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION -->
-        <section id="contact" style="text-align: center;">
-            <h2>✉️ Contact me!</h2>
-            <p>Let´s talk and create something fantastic together!</p>
-            
-            <div class="contact-links">
-                <!-- BOTONES CON ESPACIO PARA TUS IMÁGENES/LOGOS PERSONALIZADOS -->
-                <a href="https://www.linkedin.com/in/sandra-paola-sieres-escobar-game-developer/" target="_blank" class="contact-btn">
-                    <img src="icons/linkedin.png" alt="LinkedIn" class="contact-icon">
-                    LinkedIn
-                </a>
-
-                <a href="https://ssieress.itch.io/" target="_blank" class="contact-btn">
-                    <img src="icons/itchio.png" alt="Itch.io" class="contact-icon">
-                    Itch.io
-                </a>
-
-                <a href="https://github.com/sanss02" target="_blank" class="contact-btn">
-                    <img src="icons/github-btn.png" alt="GitHub" class="contact-icon">
-                    GitHub
-                </a>
-
-                <a href="mailto:sieres.san98@outlook.com" class="contact-btn">
-                    <img src="icons/email.png" alt="Correo" class="contact-icon">
-                    Correo
-                </a>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>© 2026 Sandra P. Sieres. Master of Ceremonies of Game Development. This webpage was created and design with blood, sweat & magic!</p>
-    </footer>
+  <!-- Footer oficial -->
+  <footer>
+    © 2026 Sandra P. Sieres. Master of Ceremonies of Game Development. This webpage was created and design with blood, sweat & magic!
+  </footer>
 
 </body>
 </html>
