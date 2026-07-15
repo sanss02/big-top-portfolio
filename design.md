@@ -59,3 +59,6 @@ Visitors should think while exploring and after leaving the website:
 + She keeps improving
 + She has personality
 + I want to see her next step
+
+## Design philosophy
+The portfolio exists as an invitation to test my games, a showcase for them. Every visual decision should support that goal. The design should feel elegant, warm, and memorable, while letting the projects remain the center of attention. The theatrical inspiration should create atmosphere, not distract from the content.
