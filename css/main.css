@@ -1,3 +1,6 @@
+/* =====================================================
+   1. DESIGN TOKENS
+===================================================== */
 :root{
     /* Colors */
     --background: #252525;
@@ -37,6 +40,9 @@
     --container-width:1200px;
 }
 
+/* =====================================================
+   2. RESET
+===================================================== */
 *,
 *::before,
 *::after{
@@ -61,22 +67,23 @@ img{
     max-width:100%;
 }
 
+ul{
+    list-style:none;
+}
+
 a{
     color:inherit;
     text-decoration:none;
 }
 
-ul{
-    list-style:none;
-}
-
-    .container{
-        width:min(100% - 2rem,var(--container-width));
-        margin-inline:auto;
-    }
-
-section{
-    padding-block:var(--space-xl);
+/* =====================================================
+   3. BASE
+===================================================== */
+body{
+    background:var(--background);
+    color:var(--text);
+    font-family:var(--font-body);
+    line-height:1.6;
 }
 
 h1{
@@ -91,15 +98,126 @@ h3{
     font-size:var(--fs-lg);
 }
 
-    .button{
-        display:inline-flex;
-        align-items:center;
-        justify-content:center;
-    }
+p{}
 
-    .primary{
-        background:var(--primary);
-    }
-    .secondary{
-        border:2px solid var(--secondary);
-    }
+strong{}
+
+em{}
+
+section{
+    padding-block:var(--space-xl);
+}
+
+
+/* =====================================================
+   4. LAYOUT
+===================================================== */
+.container{
+    width:min(100% - 2rem,var(--container-width));
+    margin-inline:auto;
+}
+.projects-grid{
+    display:flex;
+    display:grid;
+    gap
+    justify-content
+    align-items
+    max-width
+}
+
+.about-container{}
+
+.hero{}
+
+/* =====================================================
+   5. COMPONENTS
+===================================================== */
+ /*   COMPONENT: BUTTON
+   Reusable button styles.
+   Variants:
+   - .button-primary
+   - .button-secondary
+   - .button-disabled
+*/
+.button{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.button-primary{
+    background:var(--primary);
+}
+.button-secondary{
+    border:2px solid var(--secondary);
+}
+.button-disabled{
+
+}
+
+ /*     COMPONENT: CARDS
+    Reusable card styles.
+    Variants:
+    - .project-card{}
+    - .project-header{}
+    - .project-body{}
+    - .project-footer{}
+*/
+.project-card{}
+.project-header{}
+.project-body{}
+.project-footer{}
+
+ /*   COMPONENT: STATES
+   Reusable state styles.
+   Variants:
+   - .project-status{}
+*/
+.project-status{}
+
+ /*   COMPONENT: TIMELINE
+   Reusable timeline styles.
+   Variants:
+    - .timeline{}
+    - .timeline li{}
+*/
+.timeline{}
+.timeline li{}
+
+ /*   COMPONENT: SKILLS
+   Reusable skills list styles.
+   Variants:
+   - .skills-list{}
+*/
+.skills-list{}
+
+ /*   COMPONENT: CONTACT LIST
+   Reusable contact list styles.
+   Variants:
+   - .contact-links{}
+*/
+.contact-links{}
+
+/* =====================================================
+   6. SECTIONS
+===================================================== */
+.navbar{
+    background;
+    border;
+    color;
+}
+.logo{}
+.hero-text{}
+.hero-image{}
+#games{}
+#journey{}
+#about{}
+#contacts{}
+
+
+/* =====================================================
+   7. RESPONSIVE
+===================================================== */
+@media(max-width:1024px){}
+@media(max-width:768px){}
+@media(max-width:480px){}
